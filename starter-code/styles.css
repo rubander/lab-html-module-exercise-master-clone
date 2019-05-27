@@ -1,0 +1,218 @@
+/* This website is adapted to a screen of 1900 pixels wide, its not responsive, as it tried to emulate the design on a specific width screen. In order for it to work in smaller screens it would need @media queries */
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: 'HelvLight-Regular';
+    src:url('fonts/HelvLight-Regular.ttf.woff') format('woff'),
+        url('fonts/HelvLight-Regular.ttf.svg#HelvLight-Regular') format('svg'),
+        url('fonts/HelvLight-Regular.ttf.eot'),
+        url('fonts/HelvLight-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Nav and contents */
+nav {
+	background-color: #C12127;
+	color: rgba(255,255,255,0.8);
+	width: auto;
+	height: auto;
+	padding: 10px 0 10px 0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:13px;
+}
+nav a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+}
+.acronym {
+	margin: 0 0 0 15px;
+}
+#nav-bar {
+	width: auto;
+	display: inline-block;
+	margin: 0 0 0 8px;
+}
+.top-links {
+	display: inline-block;
+	float: right;
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+.top-links li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+/* Header - npm "Build amazing things" */
+header {
+	background-image: url(images/city-scape.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #215c7d;
+	color: white;
+	padding-bottom: 30px;
+	height: 400px;
+	font-family: 'HelvLight-Regular', Verdana, Helvetica;
+	}
+.header-container {
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-right: 2em;
+}
+#npmlogo {
+	padding-top: 4px;
+	margin-left: 1em;
+}
+#searchbar {
+	padding-top: 10px;
+	display: flex;
+}
+#searchbar img {
+	height: 39px;
+	width: auto;
+}
+#searchbar a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+}
+input[type="text"] {
+	width:82%;
+	color: white;
+	background-color: #1F526F;
+	border: 2px solid rgb(64, 108, 132);
+	margin-left: 10px;
+	padding-left:5px;
+}
+#search-link {
+	color: rgba(255,255,255,0.8);
+	display: flex;
+	align-items: center;
+	padding: 3px;
+	font-size: 1rem;
+}
+#search-link span {
+	padding: 0 3px;
+}
+h1 {
+	margin: 25px 0;
+}
+header p {
+	width:65%;
+	margin-bottom:10px;
+}
+.button {
+	color: white;
+	display: inline-block;
+	border-radius: 2em;
+	padding: 0.85em 2em;
+	margin: 1em 0;
+	text-align: center;
+	text-decoration: none;
+}
+.btn-lnk-npm {
+	background-color: rgb(240, 146, 51);
+}
+
+/*First section - npm Orgs*/
+#fst-section {
+	background-color: #273547;
+	color: white;
+	height: 360px;
+	padding-top: 1.5rem;
+}
+.fst-sect-content {
+	display: flex;
+	width: auto;	
+	margin: auto 25%;
+	padding-top:45px;
+}
+#collab-img {
+	min-height: 200px;
+	width: auto;
+	margin: 0 0 0 2em;
+}
+#collab-content {
+	font-family: 'HelvLight-Regular', Verdana, Helvetica;
+	min-width: 420px;
+	float: right;
+	margin: 0 0 0 4em;
+}
+#collab-content li {
+	margin: 10px 0;
+}
+.btn-lnk-org {
+	background-color: rgb(203, 56, 55);
+}
+.plain-link {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*Second section - what is npm?*/
+#scnd-section {
+	font-family: 'HelvLight-Regular', Verdana, Helvetica;
+	background-image: url(images/forklift.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 450px;
+	color: white;
+	position: relative;
+}
+.text-container {
+	width: 620px;
+	margin: 5% 25%;
+	position: absolute;
+}
+.text-container p {
+	width: 320px;
+	padding: 1rem 0;
+}
+.btn-link-inst {
+	background-color: rgb(49, 68, 88);
+	padding: 1rem 2.2rem;	
+}
+
+
+/*Third section - 700,000 building blocks*/
+.thrd-head {
+	font-family: 'HelvLight-Regular', Verdana, Helvetica;
+	text-align: center;
+	color: rgb(135, 145, 156);
+	line-height: 2.2;
+	margin-top: 1.5em;
+}
+.thrd-head h2 {
+	color: rgb(83, 88, 98);
+}
+.badge-container {
+	font-family: 'HelvLight-Regular', Verdana, Helvetica;
+	width: 800px;
+	margin: 0 auto;
+}
+.badge-container a {
+	color: rgb(208, 74, 73);
+	text-decoration: none;
+}
+.col {
+	float:left;
+  }
+.col-3 { width: 30%; } /* 30% | 30% | 30% */
+.col-middle { margin: 0 5%; } /* 5% | content | 5% */
+.col h3 {
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+}
+.col img {
+	margin: 1.8em 25%;
+}
+.col p {
+	text-align: center;
+	max-width: 240px;
+	margin: 1.5em auto;
+}
